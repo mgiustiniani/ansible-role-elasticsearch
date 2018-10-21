@@ -15,7 +15,7 @@
 #
 # Use a descriptive name for your cluster:
 #
-# cluster.name: my-application
+cluster.name: {{ elasticsearch_cluster_name }}
 #
 # ------------------------------------ Node ------------------------------------
 #
@@ -31,11 +31,11 @@
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-# path.data: /path/to/data
+path.data: {{ elasticsearch_data_path }}
 #
 # Path to log files:
 #
-# path.logs: /path/to/logs
+path.logs: {{ elasticsearch_log_path }}
 #
 # ----------------------------------- Memory -----------------------------------
 #

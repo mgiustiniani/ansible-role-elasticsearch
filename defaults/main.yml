@@ -3,3 +3,13 @@ elasticsearch_network_host: localhost
 elasticsearch_http_port: 9200
 elasticsearch_script_inline: true
 elasticsearch_script_indexed: true
+elasticsearch_cluster_name: mycluster
+elasticsearch_log_path: /var/log/elasticsearch
+elasticsearch_data_path: /opt/elasticsearch
+
+
+elasticsearch_version: 6.x
+elasticsearch_key: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+elasticsearch_debian_repository: https://artifacts.elastic.co/packages/{{ elasticsearch_version }}/apt
+elasticsearch_redhat_repository: https://artifacts.elastic.co/packages/{{ elasticsearch_version }}/yum
+
