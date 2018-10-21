@@ -4,6 +4,11 @@
     url: "{{ elasticsearch_key }}"
     state: present
 
+- name: install packages
+  apt: name="{{ item }}"
+  with_items:
+    - apt-transport-https
+
 - name: Add Elasticsearch repository.
   apt_repository:
     repo: 'deb {{ elasticsearch_debian_repository }} stable main'
