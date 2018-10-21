@@ -12,5 +12,3 @@
 
 - name: Install Elasticsearch.
   apt: pkg=elasticsearch state=present
-
-
