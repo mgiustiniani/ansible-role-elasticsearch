@@ -7,10 +7,10 @@
 
 - name: add data dir
   file:
-  path: /opt/elasticsearch
-  owner: elasticsearch
-  group: elasticsearch
-  mode: 0755
+    path: /opt/elasticsearch
+    owner: elasticsearch
+    group: elasticsearch
+    mode: 0750
 
 - name: Configure Elasticsearch.
   template:
