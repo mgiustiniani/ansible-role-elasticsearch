@@ -1,0 +1,6 @@
+[elasticsearch-{{ elasticsearch_version }}]
+name=Elasticsearch repository for 2.x packages
+baseurl={{ elasticsearch_redhat_repository }}
+gpgcheck=1
+gpgkey={{ elasticsearch_key }}
+enabled=1
