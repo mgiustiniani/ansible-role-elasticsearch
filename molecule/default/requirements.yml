@@ -1,2 +1,4 @@
 ---
 - src: geerlingguy.java
+- src: https://github.com/mgiustiniani/ansible-role-elasticsearch.git
+  name: manticore.elasticsearch  
