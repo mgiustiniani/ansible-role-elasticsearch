@@ -9,6 +9,13 @@
     src: elasticsearch.repo
     dest: /etc/yum.repos.d/elasticsearch.repo
     mode: 0644
+- name: Create Logstash configuration file for local syslog.
+  template:
+    src: elasticsearch.repo.j2
+    dest: /etc/yum.repos.d/elasticsearch.repo
+    owner: root
+    group: root
+    mode: 0644    
 
 - name: Install Elasticsearch.
   yum: pkg=elasticsearch state=present
